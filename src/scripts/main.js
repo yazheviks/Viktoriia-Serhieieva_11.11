@@ -11,7 +11,10 @@ const favoriteMovies = document.querySelector('.favorite-movies');
 const list = document.createElement('ul');
 const select = document.querySelector('.gallery__filter');
 
-fetch(url)
+startApplication();
+
+function startApplication() {
+  fetch(url)
   .then(response => response.json())
   .then(json => {
     data = json.map(movie => ({
@@ -24,6 +27,7 @@ fetch(url)
     renderMovies(filteredMovies);
     renderFavoriteMovies();
   });
+}
 
 function setSelect() {
   const genres = new Set();
