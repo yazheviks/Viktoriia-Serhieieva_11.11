@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
+/* eslint-disable no-undef */
 /* eslint-disable indent */
 'use strict';
 
-const url = 'http://my-json-server.typicode.com/moviedb-tech/movies/list';
+const url = 'https://my-json-server.typicode.com/moviedb-tech/movies/list';
 let data;
 let filteredMovies;
 const gallery = document.querySelector('.gallery__container');
