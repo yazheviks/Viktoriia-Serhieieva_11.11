@@ -1,0 +1,24 @@
+.favorite-movies {
+  width: 30%;
+  min-width: 180px;
+  padding: 20px;
+  background-color: rgb(226, 217, 217);
+
+  &__list {
+    position: sticky;
+    top: 10px;
+  }
+
+  &__item {
+    color: rgb(48, 48, 48);
+    transition: color 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+    &:hover {
+      color: black;
+    }
+  }
+}

@@ -3,11 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Movies gallery</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <div class="page">
+      <section class="gallery">
+        <select class="gallery__filter"></select>
+        <h1 class="page__title">Movies gallery</h1>
+        <div class="gallery__container"></div>
+      </section>
+
+      <section class="favorite-movies">
+        <h1 class="page__title">Favorite movies</h1>
+      </section>
+    </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

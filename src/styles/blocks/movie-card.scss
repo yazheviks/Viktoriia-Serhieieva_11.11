@@ -1,0 +1,52 @@
+.movie-card {
+  height: 220px;
+  width: 125px;
+  padding: 10px;
+  position: relative;
+  background-color: rgb(219, 219, 219);
+  transition: transform 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__img {
+    height: 65%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__year {
+    margin-top: 5px;
+    letter-spacing: 1px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  &__svg {
+    fill: grey;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transition: fill 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      fill: rgb(255, 211, 89);
+    }
+  }
+}
+
+.checked {
+  fill: rgb(255, 211, 89);
+}

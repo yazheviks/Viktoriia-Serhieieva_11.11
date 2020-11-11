@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./reset";
+@import "./variables";
+@import "./blocks/gallery.scss";
+@import "./blocks/favorite-movies.scss";
+@import "./blocks/page.scss";
+@import "./blocks/movie-card.scss";
+@import "./blocks/modal.scss";
 
 body {
-  background: $c-gray;
+  position: relative;
 }
